@@ -1,4 +1,5 @@
 const HomeItem = ({item}) => {
+  
   return (
     <>
       <div className="item_comtainer">

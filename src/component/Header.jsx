@@ -1,19 +1,23 @@
+import React from "react";
+// import {  } from "react-router-dom";
+// import { useRouteError } from "react-router-dom";
 import { MdPerson3 } from "react-icons/md";
 import { BsChatRightHeart } from "react-icons/bs";
 import { IoBagRemove } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Header=()=>{
   return(<>
    <header>
         <div className="logo_container">
-            <a href="#hello"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/></a>
+            <Link to="/"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/></Link>
         </div>
         <nav className="nav_bar">
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-            <a href="#">Home & Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">Studio <sup>New</sup></a>
+            <Link to="#">Men</Link>
+            <Link to="#">Women</Link>
+            <Link to="#">Kids</Link>
+            <Link to="#">Home & Living</Link>
+            <Link to="#">Beauty</Link>
+            <Link to="#">Studio <sup>New</sup></Link>
         </nav>
         <div className="search_bar">
             <span className="material-symbols-outlined search_icon">search</span>
@@ -30,11 +34,11 @@ const Header=()=>{
                 <span className="action_name">Wishlist</span>
             </div>
 
-            <a className="action_container" href="page/bag.html">
+            <Link to="/bag" className="action_container" >
             <IoBagRemove />
                 <span className="action_name">Bag</span>
                 <span className="bag_item_count">0</span>
-            </a>
+            </Link>
         </div>
     </header></>
 

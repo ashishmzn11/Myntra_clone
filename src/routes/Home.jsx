@@ -1,3 +1,5 @@
+import HomeItem from "../component/HomeItem";
+
 const Home=()=>{ const item={
   id: '007',
   image: 'images/7.jpg',
